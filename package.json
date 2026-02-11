@@ -1,0 +1,61 @@
+{
+  "name": "marketfactory",
+  "version": "1.0.0",
+  "description": "Production-ready decentralized prediction market platform with gas-optimized smart contracts",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:polygon": "hardhat run scripts/deploy.js --network polygon",
+    "deploy:arbitrum": "hardhat run scripts/deploy.js --network arbitrum",
+    "deploy:optimism": "hardhat run scripts/deploy.js --network optimism",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "coverage": "hardhat coverage",
+    "verify": "hardhat verify"
+  },
+  "keywords": [
+    "prediction-markets",
+    "defi",
+    "ethereum",
+    "smart-contracts",
+    "solidity",
+    "hardhat",
+    "eip-1167",
+    "minimal-proxy",
+    "gas-optimization"
+  ],
+  "author": "ionoi-inc",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "typechain": "^8.3.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionoi-inc/marketfactory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ionoi-inc/marketfactory/issues"
+  },
+  "homepage": "https://github.com/ionoi-inc/marketfactory#readme"
+}
